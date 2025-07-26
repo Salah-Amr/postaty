@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postaty</title>
+  <link rel="icon" type="image/png" href="./public/images/logo.png" />
+  <link rel="stylesheet" href="./public/styles/contact.css" />
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "qBPGm0sdOLrFBOm0-",
+      });
+   })();
+</script>
+</head>
+<body>
+<div class="toast" id="toast">
+        <span id="text">js message</span>
+</div>
+  <div class="header-container">
+    <span class="head" onclick="window.location='homePage.html'">
+      <img src="./public/images/logo.png" alt="postaty" width="37" height="37" />
+      Postaty
+    </span>
+  </div>
+
+  <div class="Body">
+      <textarea name="contact-text" id="contactText" placeholder="Write your message here..."></textarea>
+      <input type="email" name="Email" id="email" placeholder="Your email" required />
+      <button type="submit" class="submit" id="send">Send</button>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer">
+      <h1>Our Team</h1>
+      <div class="members">
+        <div class="mem1">
+          <h2>Salah Amr</h2>
+          <p>
+            <span>Backend Node.js Developer</span>
+            <a href="https://www.linkedin.com/in/salah-amr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./public/images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/Salah-Amr" target="_blank"><img src="./public/images/github.jpg" alt="GitHub"></a>
+          </p>
+        </div>
+        <div class="mem2">
+          <h2>Amr Mohamed</h2>
+          <p>
+            <span>Backend Node.js Developer</span>
+            <a href="https://www.linkedin.com/in/amr-mohammed-5877ab310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./public/images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/El-fnan" target="_blank"><img src="./public/images/github.jpg" alt="GitHub"></a>
+          </p>
+        </div>
+        <div class="mem3">
+          <h2>Mohamed Nour</h2>
+          <p>
+            <span>Frontend Developer</span>
+            <a href="https://www.linkedin.com/in/mohamed-nour-2996102a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./public/images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/midonour" target="_blank"><img src="./public/images/github.jpg" alt="GitHub"></a>
+          </p>
+        </div>
+        <div class="mem4">
+          <h2>Jehad Ashour</h2>
+          <p>
+            <span>UI/UX Designer</span>
+            <a href="https://www.linkedin.com/in/jehad-ashour-680495248/" target="_blank"><img src="./public/images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/jehad16" target="_blank"><img src="./public/images/github.jpg" alt="GitHub"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="scripts/contact.js"></script>
+</body>
+</html>

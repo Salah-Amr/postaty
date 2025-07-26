@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile page</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./public/styles/profilePage.css" />
+  <link rel="icon" type="image/png" href="images/add-post (1).png">
+</head>
+<body>
+  <div class="parent">
+    <div class="nav">
+            <span class="left" onclick="window.location='homePage.html'" >
+              <img src="./public/images/logo.png" alt="pstaty" width="37" height="37" >
+              Postaty
+            </span>
+      </span>
+      <div class="right">
+        <button class="home" id="homeBtn"><i class="fa-solid fa-house"></i></button>
+        <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+      </div>
+    </div>
+
+    <div class="userinfo">
+      <span class="userDetails"><i class="fa-regular fa-circle-user"></i> <p id="username">username</p></span>
+    </div>
+
+    <div class="posts">
+      <div class="type">
+        <span class="type1 active">My Posts</span>
+        <span class="type2">Liked Posts</span>
+        <span class="type3">Saved Posts</span>
+      </div>
+      <hr />
+      <div id="posts" class="postsContainer"></div>
+    </div>
+  </div>
+  <div class="popup" id="popUp">
+    <form action="" class="addPostForm">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <input type="text" name="Title" id="title" placeholder="Title..........">
+        <hr>
+        <input type="text" name="description" id="desc" placeholder="description........">
+        <hr>
+        <input type="button" value="Edit post" id="editPost">
+    </form>
+</div>
+  <script src="https://unpkg.com/dayjs@1/dayjs.min.js"></script>
+  <script src="./public/scripts/profile.js" type="module"></script>
+</body>
+</html>

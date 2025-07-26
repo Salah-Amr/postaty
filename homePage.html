@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/styles/homePage.css">
+    <link rel="icon" type="image/png" href="images/add-post (1).png">
+</head>
+<body>
+    <div class="toast" id="toast">
+        <span id="text">js message</span>
+    </div>
+    <div class="parent">
+        <div class="nav">
+            <span class="left" onclick="window.location='homePage.html'" >
+                <img src="./public/images/logo.png" alt="postaty" width="37" height="37" >
+                Postaty
+            </span>
+            <div class="right">
+                <i class="fa-regular fa-circle-user" id="profileButton"></i>
+                <span class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="Search" id="search" placeholder="Search">
+                </span>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+            </div>
+        </div>
+        <div class="new" id="addpost">
+            <p> <button><i class="fa-solid fa-circle-plus"></i></button></i> Add new post</p>
+        </div>
+        <div class="posts" id="posts">
+            
+        </div>
+        
+        <div class="popup" id="popUp">
+            <form action="" class="addPostForm">
+                <i class="fa-solid fa-xmark" id="close"></i>
+                <input type="text" name="Title" id="title" placeholder="Title..........">
+                <hr>
+                <textarea  name="description" id="desc" placeholder="description........"></textarea>
+                <hr>
+                <input type="button" value="Add post" id="add-post">
+            </form>
+        </div>
+    </div>
+    <div class="contact">
+            <span>Have any problems? <a href="contact.html">Contact us</a></span>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/dayjs@1/dayjs.min.js"></script>
+    <script src="./public/scripts/homePage.js" type="module"></script>
+
+</body>
+</html>

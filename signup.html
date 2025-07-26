@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./public/images/logo.png">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./public/styles/signup.css">
+    <link rel="icon" type="image/png" href="images/add-post (1).png">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="toast" id="toast">
+        <span id="text">js message</span>
+    </div>
+    <div class="parent">
+       
+        <div class="left">
+            <p class="logo">
+                <img src="./public/images/logo.png" alt="logo" width="50" height="50"> Postaty
+            </p>
+            <h1>Welcome !</h1>
+            <p class="disc"><span>Make posts and</span> Share your thoughts ..</p>
+        </div>
+        <div class="right">
+            <div class="top">
+                <button class="google"><img src="./public/images/google2-removebg-preview2.png" alt="google" width="35" height="35"></button>
+                <button class="facebook"><img src="./public/images/facebook-removebg-preview.png" alt="facebook" width="31" height="31"></button>
+            </div>
+            <div class="signupForm">
+                    <div class="input-group">
+                        <i class="fi fi-rs-user"></i>
+                        <input type="text" name="Name" id="name" placeholder="Name...">
+                    </div>
+                    <div class="input-group">
+                        <i class="fi fi-rr-envelope"></i>
+                        <input type="email" name="Email" id="email" placeholder="Email...">
+                    </div>
+                    <div class="input-group">
+                        <i class="fi fi-rr-lock"></i>
+                        <input type="password" name="Password" id="password" placeholder="Password...">
+                    </div>
+                    <div class="input-group">
+                        <i class="fi fi-rr-lock"></i>
+                        <input type="password" name="ConfirmPassword" id="confPassword" placeholder="Confirm Password...">
+                    </div>
+                    <button class="signup" id="signup">Signup</button>
+                    <p class="login">Already have an account? <a href="index.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./public/scripts/signup.js"></script>
+</body>
+</html>

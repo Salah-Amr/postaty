@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/38acc11ee03d6c1df3df3cc99a04b734?family=Iskoola+Pota+V2");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Sinhala", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #fcf9ff;
+  font-size: 25px;
+  color: #636363;
+  margin-top: 15px;
+  padding: 15px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 2px;
+  font-family: "Irish Grover";
+  color: #4900a7;
+  cursor: pointer;
+}
+
+#search {
+  margin-left: 10px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  margin: 40px auto 0;
+}
+
+.new i {
+  color: #4900a7;
+  transition: color 0.5s ease;
+}
+
+.new:hover i {
+  color: #c06bea;
+}
+
+.new:hover p {
+  color: #4900a7;
+}
+
+.new::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  left: 27%;
+  width: 50%;
+  top: 25%;
+  border: 1px solid #b0b0b0;
+}
+
+.new button {
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.posts {
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.post {
+  background-color: #f1eaff;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.content {
+  margin-left: 40px;
+  width: 80%;
+}
+
+.description{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    
+}
+.icons {
+  position: relative;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.content i {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.icons > i {
+  margin-bottom: 15px;
+}
+
+.right i {
+  position: absolute;
+  top: 55%;
+  left: 17px;
+  transform: translateY(-50%);
+  color: #999;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.right {
+  position: relative;
+  left: 73%;
+}
+
+.right > i {
+  left: -40px;
+  font-size: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#search {
+  padding: 8px 12px 8px 36px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.search i {
+  font-size: 20px;
+}
+
+.userDetails {
+  font-size: 30px;
+  position: relative;
+  left: -25px;
+}
+
+h3 {
+  color: black;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.popup {
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0px 0px 7px 3px #6011c547;
+  border-radius: 33px;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+  padding: 15px;
+  position: relative;
+  top: 30%;
+  left: 29%;
+}
+
+form input {
+  margin-bottom: 25px;
+  font-size: 15px;
+  position: relative;
+  left: 15px;
+  font-size: 20px;
+  padding: 5px 0 5px 20px;
+}
+
+#title {
+  margin-top: 15px;
+}
+
+input[type="button"] {
+  position: relative;
+  left: 23%;
+  padding-left: 0;
+  margin-top: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    rgba(73, 0, 167, 1),
+    rgba(246, 144, 255, 1)
+  );
+  width: 55%;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup input[type="text"] {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: 2px solid #4900a7;
+  width: 85%;
+  position: relative;
+  left: 6%;
+}
+textarea {
+  border: 2px solid #4900a7;
+  width: 85%;
+  position: relative;
+  left: 6%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 0 5px 20px;
+  margin-bottom: 5px;
+}
+
+#desc {
+  margin-top: 20px;
+}
+
+.createTime {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 30px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.fa-xmark {
+  display: block;
+  position: relative;
+  left: 95%;
+}
+
+.toast {
+  display: none;
+  min-width: 250px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px;
+  position: fixed;
+  top: 20px;
+  right: 40%;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+#logout {
+  left: 235px;
+}
+
+#logout:hover {
+  color: red;
+}
+
+.contact {
+   width: 100%;
+  text-align: center;
+  margin-top: 50px; 
+  padding: 20px 0;
+  background-color: #f9f9f9; 
+  font-size: 16px;
+}
+
+.contact a{
+    text-decoration: none;
+}
